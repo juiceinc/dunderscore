@@ -1,0 +1,30 @@
+{
+  "name": "dunderscore",
+  "version": "0.1.0",
+  "description": "Underscore templates + vega datalib filtering mechanism",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit-cli test/*.js"
+  },
+  "author": "Juice Analytics Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juiceinc/dunderscore.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "karma": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-qunit": "^1.2.0",
+    "qunit-cli": "^0.2.0",
+    "qunitjs": "^2.0.1"
+  },
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "qunit-cli test/*.js",
+    "test-browser": "karma start"
+  }
+}
