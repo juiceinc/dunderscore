@@ -4,7 +4,11 @@
   "description": "Underscore templates + vega datalib filtering mechanism",
   "main": "index.js",
   "scripts": {
-    "test": "qunit-cli test/*.js"
+    "test": "npm run test-node",
+    "test-node": "qunit-cli test/*.js",
+    "test-browser": "karma start",
+    "minify": "uglifyjs dunderscore.js --compress --comments \"/    .*/\" --mangle --output dunderscore-min.js",
+    "build": "npm run minify -- --source-map dunderscore-min.map"
   },
   "author": "Juice Analytics Inc.",
   "repository": {
@@ -20,11 +24,7 @@
     "karma-phantomjs-launcher": "^1.0.1",
     "karma-qunit": "^1.2.0",
     "qunit-cli": "^0.2.0",
-    "qunitjs": "^2.0.1"
-  },
-  "scripts": {
-    "test": "npm run test-node",
-    "test-node": "qunit-cli test/*.js",
-    "test-browser": "karma start"
+    "qunitjs": "^2.0.1",
+    "uglify-js": "^2.7.0"
   }
 }
