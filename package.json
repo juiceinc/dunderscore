@@ -7,6 +7,7 @@
     "test": "npm run test-node",
     "test-node": "qunit-cli test/*.js",
     "test-browser": "karma start",
+    "lint": "eslint dunderscore.js test/*.js",
     "minify": "uglifyjs dunderscore.js --compress --comments \"/    .*/\" --mangle --output dunderscore-min.js",
     "build": "npm run minify -- --source-map dunderscore-min.map"
   },
@@ -20,6 +21,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "eslint": "^3.4.0",
     "karma": "^1.2.0",
     "karma-phantomjs-launcher": "^1.0.1",
     "karma-qunit": "^1.2.0",
