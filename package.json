@@ -4,7 +4,7 @@
   "description": "Underscore templates + vega datalib filtering mechanism",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-node",
+    "test": "npm run test-node && npm run lint",
     "test-node": "qunit-cli test/*.js",
     "test-browser": "karma start",
     "lint": "eslint dunderscore.js test/*.js",

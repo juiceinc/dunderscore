@@ -7,8 +7,8 @@
       return s.split('').reverse().join('');
     },
     sum: function(list, start, end) {
-      if (! end) end = list.length;
-      if (! start) start = 0;
+      if (!end) end = list.length;
+      if (!start) start = 0;
       list = list.slice(start, end);
       return _.reduce(list, function(memo, n) {
         return memo + n;
@@ -42,4 +42,5 @@
     assert.equal(suppressAutoEmphasisTemplate({label: 'Moo'}), 'This <strong>Moo</strong> is emphasized but this Moo should not be emphasized', 'can suppress auto emphasis');
   });
 
-})();
+}());
+
