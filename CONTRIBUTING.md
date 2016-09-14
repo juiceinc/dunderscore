@@ -9,4 +9,4 @@
 - Make your changes while maintaining the same [coding style as Underscore](https://github.com/documentcloud/underscore/blob/master/underscore.js).
 Add any tests that are needed and run `npm test` to catch any test failures or lint issues.
 
-- Submit a (pull request)[https://github.com/juiceinc/dunderscore/compare] for feedback. Do not re-build the minified `dunderscore-min.js` file as part of your pull request.
+- Submit a [pull request](https://github.com/juiceinc/dunderscore/compare) for feedback. Do not re-build the minified `dunderscore-min.js` file as part of your pull request.
